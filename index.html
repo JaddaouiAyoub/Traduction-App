@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Traduction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application de Traduction</h1>
+        <div class="translator">
+            <textarea id="inputText" placeholder="Entrez le texte à traduire"></textarea>
+            <select id="sourceLangSelect" class="langSelect">
+                <option value="en">De Anglais</option>
+                <option value="fr">De Français</option>
+                <option value="es">De Espagnol</option>
+                <option value="it">De Italien</option>
+                <!-- Ajoutez d'autres options de langue si nécessaire -->
+            </select>
+            <select id="targetLangSelect" class="langSelect">
+                <option value="it">Vers Italien</option>
+                <option value="fr">Vers Français</option>
+                <option value="es">Vers Espagnol</option>
+                <!-- Ajoutez d'autres options de langue si nécessaire -->
+            </select>
+            <button id="translateBtn">Traduire</button>
+        </div>
+        <div class="output">
+            <h2>Traduction:</h2>
+            <p id="outputText"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
